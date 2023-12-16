@@ -658,4 +658,17 @@ BaseWars.Config.buyables = {
 			},
 		}
 	},
+    [11] = {
+        name = 'Crafting',
+        items = {
+            ['bw_workbench'] = {
+                name = 'Workbench',
+                model = 'models/props/CS_militia/table_shed.mdl',
+                desc = 'A workbench for crafting items.', -- The workbench's description.
+                price = 1000,
+                limit = 1,
+                level = 0
+            },
+        },
+    },
 }

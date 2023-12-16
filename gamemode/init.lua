@@ -35,6 +35,10 @@ include('notifications.lua')
 include('leveling.lua')
 include('raiding.lua')
 
+hook.Add("PlayerInitialSpawn", "InitializeCraftingMaterials", function(ply)
+    ply.craftingMaterials = {} -- Initialize the crafting materials table for the player
+end)
+
 function BaseWars.SaveDatabase(user, data, name)
 	if user then
 		if not file.Exists('basewars/userdata', 'DATA') then
